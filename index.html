@@ -1,45 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Pizza Dough Calculator</title>
-    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
-    <script>
-    window.klipse_settings = {
-        selector: '.language-klipse',
-        selector_reagent: '.language-reagent',
-    };
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
-</script>
-</head>
-<body>
-<h1>
-<center>Pizza Dough Calculator</center>
-</h1>
-<h2>
-Input the number of cups of flour to compute your recipe:
-<pre><code class="language-klipse">
-(defn tsp-salt [c-flour]
-  (* 1/2 c-flour))
-(defn tsp-sugar [c-flour]
-  (* 1.45 c-flour))
-(defn tsp-yeast [c-flour]
-  (* 0.68 c-flour))
-(defn pizza [c-flour]
-  {:cups-of-flour c-flour
-   :teaspoons-salt (tsp-salt c-flour)
-   :teaspoons-sugar (tsp-sugar c-flour)
-   :teaspoons-yeast (tsp-yeast c-flour)})
-
-; change the following value to the number of cups of flour:
-
-(pizza 1)
-</code></pre>
-<script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://clojurescript.org/images/cljs-logo-icon-32.png">
+  </head>
+  <body>
+    <div id="app">
+    </div> <!-- end of app div -->
+    <script src="cljs-out/dev-main.js" type="text/javascript"></script>
+  </body>
 </html>
